@@ -12,15 +12,16 @@ function RDemosPage() {
 
   return (
     <div 
-      className="rdemos-page"
-      style={{ 
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'scroll', // Use scroll instead of fixed for better mobile performance
-        minHeight: '100vh',
-        position: 'relative'
-      }}
+    style={{ 
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed', // Keep this
+      minHeight: '100vh', // Change to min-height
+      height: '100%', // Add this
+      position: 'relative',
+      width: '100%' // Ensure full width
+    }}
     >
     
       <div className="background-overlay">
