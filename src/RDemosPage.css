@@ -1,4 +1,4 @@
-.demos-page {
+.rdemos-page {
   color: white;
   width: 100%;
   margin: 0;
@@ -53,17 +53,18 @@ h1 {
 }
 
 .home-button {
-  background: transparent !important;
-  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: white !important;
+  border: 2px solid white !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+
 }
 
 .home-button:hover {
-  background: rgba(255, 255, 255, 0.2); /* Slight white tint on hover */
-  border-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
+  background-color: rgba(255, 255, 255, 0.3) !important;}
 
 /* Responsive design */
 @media (max-width: 768px) {

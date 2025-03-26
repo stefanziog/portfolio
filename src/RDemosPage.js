@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './DemosPage.css';
+import './RDemosPage.css';
 import backgroundImage from './assets/background.jpg';
 
-function DemosPage() {
+function RDemosPage() {
   const navigate = useNavigate();
 
   const goHome = () => {
@@ -12,7 +12,7 @@ function DemosPage() {
 
   return (
     <div 
-      className="demos-page"
+      className="rdemos-page"
       style={{ 
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
@@ -22,36 +22,32 @@ function DemosPage() {
         position: 'relative'
       }}
     >
+    
       <div className="background-overlay">
         <div className="content-container">
-          <h1>AI and Machine Learning Demos</h1>
+
+
+          <h1>Autonomous Robots Demos</h1>
         
           <section className="youtube-videos">
             <div className="video-grid">
               <iframe 
-                src="https://www.youtube.com/embed/ppCPDzL_fAs" 
-                title="First AI Demonstration" 
+                src="https://www.youtube.com/embed/w0Z8wgRdnIk" 
+                title="Robot Demonstration" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
               ></iframe>
               <iframe 
-                src="https://www.youtube.com/embed/MWIxgRXCaHA" 
-                title="Second AI Demonstration" 
+                src="https://www.youtube.com/embed/pcpJtGmh6Gs" 
+                title="Robot Short 1" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
               ></iframe>
               <iframe 
-                src="https://www.youtube.com/embed/JWVnKCrLDsc" 
-                title="Third AI Demonstration" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
-              <iframe 
-                src="https://www.youtube.com/embed/x8jttzOtAuo" 
-                title="Fourth AI Demonstration" 
+                src="https://www.youtube.com/embed/2lYha7BQzLQ" 
+                title="Robot Short 2" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
@@ -71,4 +67,4 @@ function DemosPage() {
   );
 }
 
-export default DemosPage;
+export default RDemosPage;
