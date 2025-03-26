@@ -12,15 +12,14 @@ function DemosPage() {
 
   return (
     <div 
-      className="demos-page"
-      style={{ 
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        minHeight: '100vh',
-        position: 'relative'
-      }}
+    style={{ 
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'scroll', // Use scroll instead of fixed for better mobile performance
+      minHeight: '100vh',
+      position: 'relative'
+    }}
     >
       <div className="background-overlay">
         <div className="content-container">

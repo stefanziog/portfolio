@@ -26,7 +26,7 @@ function HomePage() {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'scroll',
+        backgroundAttachment: 'scroll', // Use scroll instead of fixed for better mobile performance
         minHeight: '100vh',
         position: 'relative'
       }}

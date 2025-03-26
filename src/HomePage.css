@@ -78,3 +78,44 @@ h1, h2 {
 .programming-skills svg:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 95%; /* Wider on mobile */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller font size */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+  }
+
+  .demos-button, .rdemos-button, .home-button {
+    width: 100%; /* Full-width buttons */
+    padding: 12px 15px; /* Larger touch target */
+  }
+
+  .programming-skills {
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .programming-skills svg {
+    size: 40; /* Slightly smaller icons */
+  }
+}

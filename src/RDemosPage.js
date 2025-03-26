@@ -17,7 +17,7 @@ function RDemosPage() {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+        backgroundAttachment: 'scroll', // Use scroll instead of fixed for better mobile performance
         minHeight: '100vh',
         position: 'relative'
       }}

@@ -66,12 +66,33 @@ h1 {
 
 
 /* Responsive design */
+/* Responsive typography */
 @media (max-width: 768px) {
-  .video-grid {
-    grid-template-columns: 1fr;
+  .content-container {
+    width: 95%; /* Wider on mobile */
+    padding: 1rem; /* Reduce padding */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Smaller font size */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 15px; /* Reduced gap */
+  }
+
+  .video-grid iframe {
+    border-radius: 8px; /* Slightly smaller border radius */
   }
 }
