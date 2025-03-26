@@ -35,7 +35,7 @@ function HomePage() {
     >
       <div className="background-overlay">
         <div className="content-container">
-          <h1>Hello There!</h1>
+          <h1>Hello There</h1>
           
 
           <section className="ai-section">
