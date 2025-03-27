@@ -73,30 +73,6 @@ function CVPage() {
                 </ul>
               </div>
               <div className="experience-item">
-                <h3>Researcher</h3>
-                <p>Force technologies</p>
-                <p>2024 - 2025</p>
-                <ul>
-                  <li>Evaluated Deep Reinforcement Learning techniques in Unmanned Autonomous Vehicles.</li>
-                  <li>Utilized perception frameworks such as vision and depth for navigation purposes.</li>
-                  <li>Integrated advanced sensor data analysis using TensorFlow.</li>
-                  <li>Designed and validated photorealistic graphical environments in Gaming Engines.</li>
-
-                </ul>
-              </div>
-              <div className="experience-item">
-                <h3>Software Developer Intern</h3>
-                <p>Membantu Aps</p>
-                <p>2023 - 2024</p>
-                <ul>
-                  <li>Collaborated with a multidisciplinary team to develop an interactive storyteller using state-of-the-art
-                  LLMs such as ChatGPT, Dall-E 2, and Eleven Labs.</li>
-                  <li>Utilized Django to design scalable and secure APIs for web applications, optimizing data workflows and
-                  server response times.</li>
-                  <li>Configured and managed Amazon Web Services (AWS) environments.</li>
-                </ul>
-              </div>
-              <div className="experience-item">
                 <h3>Engineer</h3>
                 <p>K.Y.D. Vlachodimou Despina</p>
                 <p>2022 - 2023</p>

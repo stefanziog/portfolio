@@ -45,7 +45,6 @@ function HomePage() {
             <h2>About me</h2>
             <div>
               <p>I am a passionate engineer with a strong background in AI-Machine Learning and Robotics.</p>
-              <p>I am proficient in Software Development, Data Science and Embedded Systems</p>
               <p>My dream is to apply my skills in a relative field and further develop my knowledge.</p>
               <p>With an open mind and hard work I desire to collaborate in creative and innovative projects.</p>
               <p>Contact Links:</p>
@@ -95,10 +94,12 @@ function HomePage() {
 
           
           <section className="about-section">
-            <h2>Education</h2>
+            <h2>Searching</h2>
             <div>
-              <p>MSc in Autonomous Systems, Technical University of Denmark.</p>
-              <p>Integrated MSc in Production and Management Engineering, Democritus University of Thrace</p>
+              <p>Opportunities for work in the following fields:</p>
+              <p>AI Engineer, Machine Learning Engineer, Software Developer.</p>
+              <p>Data Scientist, Data Engineer, Data Analyst, Consultant, QA </p>
+
             </div>
           </section>
         
