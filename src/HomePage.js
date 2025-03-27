@@ -19,6 +19,9 @@ function HomePage() {
     navigate('/rdemos');
   };
 
+  const goToCV = () => {
+    navigate('/cv');
+  };
   return (
     <div 
       className="home-page" 
@@ -42,21 +45,51 @@ function HomePage() {
             <h2>About me</h2>
             <div>
               <p>I am a passionate engineer with a strong background in AI-Machine Learning and Robotics.</p>
+              <p>I am proficient in Software Development, Data Science and Embedded Systems</p>
               <p>My dream is to apply my skills in a relative field and further develop my knowledge.</p>
               <p>With an open mind and hard work I desire to collaborate in creative and innovative projects.</p>
-              <p>Visit my <a 
+              <p>Contact Links:</p>
+              <p><a 
                 href="https://github.com/stefanziog" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 style={{
                   color: '#ffffff', 
-                  textDecoration: 'underline', 
+                  textDecoration: 'none', 
                   fontWeight: 'bold',
                   transition: 'color 0.3s ease'
                 }}
                 onMouseOver={(e) => e.target.style.color = '#60a5fa'}
                 onMouseOut={(e) => e.target.style.color = '#ffffff'}
-              >GitHub account</a> for more</p>
+              >GitHub   </a>
+              <a 
+                href="https://www.linkedin.com/in/stefanosziogas/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{
+                  color: '#ffffff', 
+                  textDecoration: 'none', 
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s ease'
+                }}
+                onMouseOver={(e) => e.target.style.color = '#60a5fa'}
+                onMouseOut={(e) => e.target.style.color = '#ffffff'}
+              >LinkedIn   </a>
+              <a 
+                href="mailto:stefan.ziog@gmail.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{
+                  color: '#ffffff', 
+                  textDecoration: 'none', 
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s ease'
+                }}
+                onMouseOver={(e) => e.target.style.color = '#60a5fa'}
+                onMouseOut={(e) => e.target.style.color = '#ffffff'}
+              >Gmail</a>
+              
+              </p>
             </div>
           </section>
 
@@ -83,6 +116,12 @@ function HomePage() {
                 onClick={goToRDemos}
               >
                 Smart Robot Videos
+              </button>
+              <button 
+                className="cv-button" 
+                onClick={goToCV}
+              >
+                CV
               </button>
             </div>
 
