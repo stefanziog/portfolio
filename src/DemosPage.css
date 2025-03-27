@@ -1,26 +1,43 @@
-.demos-page {
-  color: white;
-  width: 100%;
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(48, 0, 72, 0.9), rgba(48, 0, 72, 0.9)),
+    url('./assets/background.jpg') center center / cover repeat-y fixed;
+  overflow-x: hidden;
+  overflow-y: auto; /* Add this to prevent potential vertical overflow */
+}
+
+.demos-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw; /* Ensure full viewport width */
+  max-width: 100%; /* Prevent horizontal scrolling */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .background-overlay {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto; /* Allow scrolling if content is long */
 }
 
 .content-container {
   max-width: 1250px; /* Slightly increased from original */
   width: 92%; /* Slight increase from original 90% */
   padding: 2rem;
+  padding-bottom: 0;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -54,6 +71,7 @@ h1 {
 
 .home-button {
   background: transparent !important;
+  margin-bottom: 0 !important;
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
   color: white !important;
 }
@@ -67,32 +85,42 @@ h1 {
 
 /* Responsive design */
 /* Responsive typography */
+h1 {
+  color: white;
+  font-size: 2.5rem; /* Keep large size on bigger screens */
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+/* Responsive heading adjustments - ONLY on small screens */
 @media (max-width: 768px) {
-  .content-container {
-    width: 95%; /* Wider on mobile */
-    padding: 1rem; /* Reduce padding */
+
+  .demos-page,
+  .background-overlay {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   h1 {
-    font-size: 1.8rem; /* Smaller font size */
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.9rem;
+    font-size: 1.8rem !important; /* Smaller size */
+    margin-bottom: 1.2rem !important; /* Reduce gap */
+    padding-top: 2rem !important; /* Move lower */
   }
 }
 
-@media (max-width: 768px) {
-  .video-grid {
-    grid-template-columns: 1fr; /* Single column on mobile */
-    gap: 15px; /* Reduced gap */
-  }
+/* Reduce spacing below videos */
+.youtube-videos {
+  margin-bottom: 2rem; /* Reduce space */
+}
 
-  .video-grid iframe {
-    border-radius: 8px; /* Slightly smaller border radius */
-  }
+.video-grid {
+  gap: 20px; /* Reduce space between videos */
+  margin-bottom: 2rem; /* Reduce space before button */
+}
+
+/* Move "Back to Home" button closer */
+.home-button {
+  margin-top: 5px !important; /* Reduce top margin */
 }

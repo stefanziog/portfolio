@@ -16,11 +16,10 @@ function DemosPage() {
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundAttachment: 'fixed', // Keep this
-      minHeight: '100vh', // Change to min-height
-      height: '100%', // Add this
-      position: 'relative',
-      width: '100%' // Ensure full width
+      backgroundRepeat: 'repeat-y', // This makes the background continue downwards
+      backgroundAttachment: 'fixed', 
+      minHeight: '100vh', 
+      width: '100%' 
     }}
     >
       <div className="background-overlay">

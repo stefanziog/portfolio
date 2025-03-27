@@ -11,24 +11,13 @@ function RDemosPage() {
   };
 
   return (
-    <div 
-    style={{ 
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed', // Keep this
-      minHeight: '100vh', // Change to min-height
-      height: '100%', // Add this
-      position: 'relative',
-      width: '100%' // Ensure full width
-    }}
-    >
+    <div className="rdemos-page">
     
       <div className="background-overlay">
         <div className="content-container">
 
 
-          <h1>Autonomous Robots Demos</h1>
+          <h1>Smart Robots Demos</h1>
         
           <section className="youtube-videos">
             <div className="video-grid">
