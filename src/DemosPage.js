@@ -11,17 +11,8 @@ function DemosPage() {
   };
 
   return (
-    <div 
-    style={{ 
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'repeat-y', // This makes the background continue downwards
-      backgroundAttachment: 'fixed', 
-      minHeight: '100vh', 
-      width: '100%' 
-    }}
-    >
+    <div className="demos-page">
+    
       <div className="background-overlay">
         <div className="content-container">
           <h1>AI and Machine Learning Demos</h1>

@@ -44,6 +44,19 @@ function HomePage() {
               <p>I am a passionate engineer with a strong background in AI-Machine Learning and Robotics.</p>
               <p>My dream is to apply my skills in a relative field and further develop my knowledge.</p>
               <p>With an open mind and hard work I desire to collaborate in creative and innovative projects.</p>
+              <p>Visit my <a 
+                href="https://github.com/stefanziog" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{
+                  color: '#ffffff', 
+                  textDecoration: 'underline', 
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s ease'
+                }}
+                onMouseOver={(e) => e.target.style.color = '#60a5fa'}
+                onMouseOut={(e) => e.target.style.color = '#ffffff'}
+              >GitHub account</a> for more</p>
             </div>
           </section>
 
