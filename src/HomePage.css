@@ -1,8 +1,13 @@
+
 .home-page {
-  color: white;
+  background: url('./assets/background3.jpg') center center / cover repeat-y fixed !important;
+  min-height: 100vh;
   width: 100%;
+}
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .background-overlay {
@@ -15,6 +20,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+p {
+  color: white;
+  margin-bottom: 1rem;
+
 }
 
 .content-container {
@@ -29,7 +39,11 @@
 
 h1, h2 {
   color: white;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .about-section, .ai-section {
@@ -59,7 +73,7 @@ h1, h2 {
   transition: background-color 0.3s ease;
 }
 
-.demos-button:hover, .rdemos-button:hover, .cv-button:hover {
+.demos-button:hover, .rdemos-button:hover, .cv-button {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -90,12 +104,10 @@ h1, h2 {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
-  p {
-    font-size: 0.9rem;
-  }
+
 }
 
 @media (max-width: 768px) {

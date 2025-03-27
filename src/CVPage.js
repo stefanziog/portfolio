@@ -49,8 +49,8 @@ function CVPage() {
             <h2>Professional Experience</h2>
             <div>
               <div className="experience-item">
-                <h3>Researcher</h3>
-                <p>Force technologies</p>
+                <h3>MSc Thesis Researcher</h3>
+                <p>Force Technology</p>
                 <p>2024 - 2025</p>
                 <ul>
                   <li>Evaluated Deep Reinforcement Learning techniques in Unmanned Autonomous Vehicles.</li>
